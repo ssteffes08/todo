@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+td.taskDesc{
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+input.newClass {
+	width: 75%;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+input.ng-invalid {
+	background-color: #FF5555;
+}

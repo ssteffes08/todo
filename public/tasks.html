@@ -1,0 +1,19 @@
+<!--table id="taskTable">
+	<tr ng-repeat="t in tasks"-->
+	<div ng-repeat="t in tasks">
+		<div ng-style="setIndentation(t)">
+			<input type="checkbox" ng-model="t.Complete" ng-change="update(t)"/>
+			<span ng-class="{strike: t.Complete}" ng-show="!t.editing"><a href="#/tasks/{{t.Id}}">{{t.Description}}</a></span><input type="text" class="newTask" ng-show="t.editing" ng-model="t.Description"/>
+			<button class="btn btn-primary btn-xs" ng-click="add()" ng-show="$last && !adding"><i class="fa fa-plus"></i></button>
+			<!--button class="btn btn-success btn-xs" ng-click="update(t)" ng-show="t.editing"><i class="fa fa-plus"></i></button>
+			<button class="btn btn-danger btn-xs" ng-click="update_cancel(t)" ng-show="t.editing"><i class="fa fa-trash-o"></i></button-->
+			<br/>
+		</div>
+	</div>
+	<!--div ng-show="adding">
+		<input class="newTask" type="text" placeholder="New Task Description" ng-model="task.Description"/>
+		<button class="btn btn-primary btn-xs" ng-click="save()"><i class="fa fa-plus"></i></button>
+		<button class="btn btn-danger btn-xs" ng-click="cancel()"><i class="fa fa-trash-o"></i></button>
+	</div-->
+	<!--/tr>
+</table-->
